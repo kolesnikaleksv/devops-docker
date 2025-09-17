@@ -21,3 +21,8 @@ COPY . .
 EXPOSE 5173
 
 CMD ["npm", "run", "dev"]
+
+# comand for building image
+# docker build -t react-docker .
+# comand for runing project in dev
+# docker run -p 5173:5173 -v "${PWD}:/app" -v /app/node_modules react-docker
